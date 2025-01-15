@@ -5,7 +5,7 @@ import os
 
 while True:
     os.system('clear')
-    r = requests.get("https://www.wunderground.com/weather/us/nj/moorestown-township/KNJMOORE24")
+    r = requests.get("{LOCAL WEATHER LINK}")
     soup = BeautifulSoup(r.content, "html.parser")
 
     temp_span = soup.find_all('span', class_="wu-value wu-value-to")
